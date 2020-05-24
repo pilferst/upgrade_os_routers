@@ -1,0 +1,6 @@
+Value i_version (\S+)
+Value n_version (\S+)
+
+Start 
+ ^.*current-firmware: +${i_version}
+ ^.*upgrade-firmware: +${n_version} -> Record

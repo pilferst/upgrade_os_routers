@@ -1,0 +1,6 @@
+Value i_version (\S+)
+Value n_version (\S+)
+
+Start 
+ ^.*installed-version: +${i_version}
+ ^.*latest-version: +${n_version} -> Record
